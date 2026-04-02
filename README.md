@@ -57,6 +57,7 @@ This simulates a real-world backup scenario used in cloud, DevOps, and cybersecu
 
 1. Download AWS CLI v2:
    https://awscli.amazonaws.com/AWSCLIV2.msi
+<img width="1389" height="979" alt="download_CLI" src="https://github.com/user-attachments/assets/96cff55d-7d5c-46a5-9ff1-108e34a5d77e" />
 
 2. Run installer and follow prompts
 

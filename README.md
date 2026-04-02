@@ -73,6 +73,7 @@ aws --version
 
 ## 🚀 Step 2: Configure AWS CLI Credentials
 
+<img width="1102" height="442" alt="Access_Key" src="https://github.com/user-attachments/assets/fb41b97a-a227-4042-bef2-064145da7acd" />
 Run:
 
 ```bash
@@ -101,14 +102,16 @@ C:\Users\<your-user>\.aws\credentials
 Create bucket:
 
 ```bash
-aws s3 mb s3://jarvis-s3-backup-lab-2025
+aws s3 mb s3://zaid-s3-backup-lab-2026
 ```
+<img width="1099" height="111" alt="Create_s3_bucket" src="https://github.com/user-attachments/assets/219ae53f-301f-422b-8a51-de5c54812e9b" />
 
 Verify:
 
 ```bash
 aws s3 ls
 ```
+<img width="1100" height="98" alt="Verifiy_S3Bucket" src="https://github.com/user-attachments/assets/911c3abe-edb4-4cee-9afd-d5680a2c71fb" />
 
 ---
 
@@ -119,6 +122,7 @@ Create directory:
 ```bash
 mkdir files-to-backup
 ```
+<img width="991" height="100" alt="Echo" src="https://github.com/user-attachments/assets/11ee579d-260b-4c39-9a19-a4c01444d2fc" />
 
 Create sample files:
 
@@ -126,6 +130,8 @@ Create sample files:
 echo Sample content for File 1 > files-to-backup/file1.txt
 echo Sample content for File 2 > files-to-backup/file2.txt
 ```
+<img width="589" height="215" alt="Echo1" src="https://github.com/user-attachments/assets/9bc56b74-58e3-434c-be45-025d368cfd92" />
+<img width="646" height="140" alt="Echo2" src="https://github.com/user-attachments/assets/a995058a-50ee-4e4f-9afa-af1bc92b2169" />
 
 ---
 
@@ -137,8 +143,11 @@ This script will:
 * Upload files
 * Verify uploads
 * Generate report
+<img width="992" height="533" alt="Script1" src="https://github.com/user-attachments/assets/11d17a0d-d194-4be1-bc5a-e3ef691efe01" />
 
 Make executable:
+You must download Git Bash for windows in order to run the script
+<img width="480" height="107" alt="Bash" src="https://github.com/user-attachments/assets/f634ba59-c370-4f67-8550-998e64ed80d1" />
 
 ```bash
 chmod +x s3_backup.sh
@@ -164,21 +173,24 @@ This file contains:
 * ✅ Bucket ACL status
 * ✅ Upload logs
 * ✅ Verification of uploaded files
+<img width="1037" height="594" alt="Output" src="https://github.com/user-attachments/assets/09ff3e86-8de1-406d-8c40-5e32219b75bd" />
 
 ---
 
 ## 🔍 Step 7: Validate in AWS Console & Test Public Access
 
 List uploaded files:
+<img width="1105" height="618" alt="Verfiy_installation" src="https://github.com/user-attachments/assets/5566144e-5a6d-4d99-bd08-ec60ad857a91" />
 
 ```bash
-aws s3 ls s3://jarvis-s3-backup-lab-2025
+aws s3 ls s3://zaid-s3-backup-lab-2026
 ```
 
 Check bucket ACL:
+<img width="892" height="296" alt="verfiy it exists" src="https://github.com/user-attachments/assets/a9f3dc62-01e4-4cda-9817-56703bfa6967" />
 
 ```bash
-aws s3api get-bucket-acl --bucket jarvis-s3-backup-lab-2025
+aws s3api get-bucket-acl --bucket zaid-s3-backup-lab-2026
 ```
 
 ---
@@ -186,15 +198,17 @@ aws s3api get-bucket-acl --bucket jarvis-s3-backup-lab-2025
 ## 🧹 Step 8: Clean Up AWS Resources
 
 Delete all files:
+<img width="935" height="140" alt="verify removal" src="https://github.com/user-attachments/assets/b167a6f2-be66-4ee7-93e4-d4d22341b706" />
 
 ```bash
-aws s3 rm s3://jarvis-s3-backup-2025 --recursive
+aws s3 rm s3://zaid-s3-backup-2026 --recursive
 ```
 
 Delete bucket:
+<img width="752" height="67" alt="confirm removal 1" src="https://github.com/user-attachments/assets/9c2ed705-96aa-4fa6-be1d-2815273032ef" />
 
 ```bash
-aws s3 rb s3://jarvis-s3-backup-2025
+aws s3 rb s3://zaid-s3-backup-2026
 ```
 
 ---

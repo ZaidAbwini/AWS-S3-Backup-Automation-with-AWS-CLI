@@ -60,8 +60,10 @@ This simulates a real-world backup scenario used in cloud, DevOps, and cybersecu
 <img width="1389" height="979" alt="download_CLI" src="https://github.com/user-attachments/assets/96cff55d-7d5c-46a5-9ff1-108e34a5d77e" />
 
 2. Run installer and follow prompts
+<img width="489" height="379" alt="installation_complete" src="https://github.com/user-attachments/assets/c2af5c84-6b4f-4e05-b6fa-52bcd4b530bf" />
 
 3. Verify installation:
+<img width="1105" height="618" alt="Verfiy_installation" src="https://github.com/user-attachments/assets/f251f2c2-1240-4644-a258-36dd2558f4c3" />
 
 ```bash
 aws --version

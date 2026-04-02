@@ -205,11 +205,11 @@ aws s3 rm s3://zaid-s3-backup-2026 --recursive
 ```
 
 Delete bucket:
-<img width="752" height="67" alt="confirm removal 1" src="https://github.com/user-attachments/assets/9c2ed705-96aa-4fa6-be1d-2815273032ef" />
 
 ```bash
 aws s3 rb s3://zaid-s3-backup-2026
 ```
+<img width="752" height="67" alt="confirm removal 1" src="https://github.com/user-attachments/assets/9c2ed705-96aa-4fa6-be1d-2815273032ef" />
 
 ---
 
